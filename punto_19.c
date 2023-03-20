@@ -47,8 +47,9 @@ int main()
 
 
 /* User code -----------------------------------------------------------------*/
-    while(1){        
-        printf("Ingrese la tecla a partir de la cual realizar el triangulo\t");
+    while(1){
+        printf("Programa constructor de un triangulo a partir de un caracter ASCII ingresado\n");        
+        printf("Ingrese la tecla a partir de la cual realizar el triangulo\n");
         scanf("%c", &caracter);
         //scanf("%hhd", &caracter); para introducir el numero del caracter en ASCII
         for(x=0;x<=6;x++){
@@ -57,7 +58,10 @@ int main()
                 caracter++;            
                 }
             printf("\n");       
-        }    
+        }
+        
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
+        
         opt = getch();
         if(opt == 0)
             opt = getch() + 1000;

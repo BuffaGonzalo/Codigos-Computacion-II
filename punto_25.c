@@ -46,8 +46,9 @@ int main()
 
 
 /* User code -----------------------------------------------------------------*/
-    while(1){        
-        printf("\nCONVERSOR DE ENTERO A BINARIO\n");
+    while(1){   
+        clrscr();    
+        printf("CONVERSOR DE ENTERO A BINARIO\n");
         printf("Ingrese un numero - entero positivo\n");
         scanf("%i", &num);
          
@@ -62,7 +63,8 @@ int main()
             entero = entero/2; //entero = entero/2
         }
         
-        printf("El numero entero %i es %i en binario",num, posicion);
+        printf("El numero entero %i es %i en binario\n",num, posicion);
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
         
         opc=getch();        
         if(opc == 0)

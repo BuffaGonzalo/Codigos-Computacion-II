@@ -77,7 +77,8 @@ int main()
         printf("El numero mayor es %i\n", max);
         printf("El numero menor es %i\n", min);
         
-        printf("Ingrese ESC para salir, cualquier otra para seguir\n");
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
+        
         opc=getch();
         if(opc==0)
             opc = getch() + 1000;

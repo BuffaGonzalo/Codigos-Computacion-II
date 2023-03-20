@@ -73,10 +73,11 @@ int main()
                     raiz1 = ((-b + sqrt(d))/(2*a)); //raiz por signo positivo
                     raiz2 = ((-b - sqrt(d))/(2*a)); //raiz por signo negativo
                     clrscr();
-                    printf("Calculadora de funciones cuadraticas\n");
-                    printf("Termino cuadratico es %f\n", a);
-                    printf("Termino lineal es %f\n", b);
-                    printf("Termino independiente es %f\n", c);
+                    //printf("Calculadora de funciones cuadraticas\n");
+                    //printf("Termino cuadratico es %f\n", a);
+                    //printf("Termino lineal es %f\n", b);
+                    //printf("Termino independiente es %f\n", c);
+                    clrscr();
                     printf("La ecuacion es:  %.1fx%c%.1fx%.1f\n",a,253,b,c);
                     printf("Existen dos raices reales\n");
                     printf("La primera raiz es %f\n", raiz1);
@@ -92,6 +93,8 @@ int main()
             
         } 
 
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
+        
         opc=getch();
         if(opc==0)
             opc = getch() + 1000;

@@ -65,7 +65,7 @@ int main()
         printf("Hay en total %i caracteres\n", caracteres);
         printf("Hay en total %i palabras\n", palabras);        
         printf("Hay en total %i lineas\n", lineas);
-        printf("Presione ESC para salir, cualquier letra para continuar\n");
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
         
         opc=getch();
         if(opc == 0)

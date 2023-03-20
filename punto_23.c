@@ -124,8 +124,8 @@ int main()
         } //llaves whiles
          
         printf("La cantidad de palabras con mas de 4 vocales son %i\n", contador);
-        printf("Presione ESC para salir, cualquier letra para continuar\n");
-        
+        printf("Presione ESC para salir, cualquier otra tecla para continuar\n");
+    
         opc=getch();
         if(opc == 0)
             opc = getch()+1000;

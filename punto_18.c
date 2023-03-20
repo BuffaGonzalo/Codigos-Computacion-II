@@ -41,28 +41,35 @@
 int main()
 {
 /* Local variables -----------------------------------------------------------*/
-   float num;
-   int r, result, opt = 0;
-   double e = 0.01;
+   int opt = 0;
+   double n = 0.0; //valor ingresado por el usuario 
+   double x = 0.0; //valor aproximado por el usuario 
+   double y = 0.0; //aproximacion de la raiz
+   double error = 0.0; //error que se compara con e   
+   const double e = 0.000001;
 /* END Local variables -------------------------------------------------------*/
 
 
 /* User code -----------------------------------------------------------------*/
     while(1){        
-        printf("Ingrese el numero del que quiere la raiz cuadrada\t");
-        scanf("%f", &num);
+        printf("Ingrese el numero del que quiere la raiz cuadrada\n");
+        scanf("%lf", &n);
+        printf("Ingrese una aproximacion de la raiz\n");
+        scanf("%lf", &x);
         //raiz valida cuando el numero e es pequeño
         do{
-            r = num/2;
-            result=(num/r+r)/2;        
-        }while(abs(r-result)<=e);
-        printf("La raiz del numero %.2f es %i", num, result);        
+            y=(n/x+x)/2; 
+            error = fabs(x-y);
+            x=y;
+        }while(error<=e);
+        printf("La raiz del numero %.2lf es %.1lf", n, y);        
         
         opt = getch();
         if(opt == 0)
             opt = getch() + 1000;
         if(opt == 27)
             break;
+        clrscr();
     }
 
     
