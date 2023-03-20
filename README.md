@@ -18,5 +18,23 @@ Puntos 7 -> Programa que calcula la cantidad de segundos del día y los transfor
 
 If/Switch
 
+Punto 8 -> Programa que da como resultado el menor de tres números diferentes ingresados
+
+Punto 9 -> Programa que calcula el costo de productos comprados a partir de la cantidad
+Punto 10 -> Programa que guarda la nota de un estudiante en una variable si es >= 5, de otra forma imprime el valor -1. finalmente imprime el valor  que tomó la variable.
+
+Punto 11 -> 
+Punto 12 -> 
+Punto 13 -> 
+Punto 14 -> 
+Punto 15 -> 
+Punto 16 -> 
+Punto 17 -> 
+Punto 18 -> 
+
+Punto 25 -> Programa de pasaje de decimal a binario
+
+
+
 Puntos 
 
