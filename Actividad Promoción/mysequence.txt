@@ -1,0 +1,4 @@
+setinicio(1,1)
+adelante(5)
+girarderecha(1)
+adelante(5)

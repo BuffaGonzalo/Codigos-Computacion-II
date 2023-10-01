@@ -1,0 +1,29 @@
+\doxysection{ticker.\+h}
+\hypertarget{ticker_8h_source}{}\label{ticker_8h_source}\mbox{\hyperlink{ticker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TICKER\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TICKER\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}{OnTimer}})();}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5eae4379d044711537d9ce3b3b58c575c58}{PERIODIC}}\ =\ 0,}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5ea2724fa87f252403cd2c93f7437f34fd5}{ONESHOT}},}
+\DoxyCodeLine{00016\ \}\ \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\_eTypeTimer}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{ticker_8h_afc6ae97512ec2864f9dd57a70c770342}{TimerAdd}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ticker_8h_a46b6747f8761a39ab29b09b7dd3674dd}{TimerConnect}}(\textcolor{keywordtype}{int}\ aTimeId,\ \mbox{\hyperlink{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}{OnTimer}}\ aOnTimerFun);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ticker_8h_a4823bee628250d2c06971c8d0b10c327}{TimerStart}}(\textcolor{keywordtype}{int}\ aTimerId,\ \textcolor{keywordtype}{int}\ ms,\ \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\_eTypeTimer}}\ mode);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ticker_8h_a8215dbb23160013a508accc8862d8326}{TimerStop}}(\textcolor{keywordtype}{int}\ aTimerId);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ticker_8h_a30f2063c4c7e28a582609c6a6aafa4ff}{TickerTask}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TICKER\_H\_INCLUDED}}
+
+\end{DoxyCode}

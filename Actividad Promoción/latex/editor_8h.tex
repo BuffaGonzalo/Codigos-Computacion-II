@@ -1,0 +1,66 @@
+\doxysection{editor.\+h File Reference}
+\hypertarget{editor_8h}{}\label{editor_8h}\index{editor.h@{editor.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{editor_8h_af3f139ab5d6bf4f8f74eb075a0197366}{editor}} (unsigned short buffer\+Lenth, unsigned short seen\+Buffer, char \texorpdfstring{$\ast$}{*}e\+Vector, int \mbox{\hyperlink{main_8c_a7736a56a96fa4366479732755a5b9d5e}{opt}}, int posX, int posY, unsigned char bkg\+Color, unsigned char ltr\+Color, char cursor\+Blink)
+\begin{DoxyCompactList}\small\item\em editor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{editor_8h_ae753773ec2c51ba7e8c7b10f4ac3c676}{parser}} (unsigned short buffer\+Lenth, char \texorpdfstring{$\ast$}{*}e\+Vector)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{editor_8h_af3f139ab5d6bf4f8f74eb075a0197366}\label{editor_8h_af3f139ab5d6bf4f8f74eb075a0197366} 
+\index{editor.h@{editor.h}!editor@{editor}}
+\index{editor@{editor}!editor.h@{editor.h}}
+\doxysubsubsection{\texorpdfstring{editor()}{editor()}}
+{\footnotesize\ttfamily void editor (\begin{DoxyParamCaption}\item[{unsigned short}]{buffer\+Lenth,  }\item[{unsigned short}]{seen\+Buffer,  }\item[{char \texorpdfstring{$\ast$}{*}}]{e\+Vector,  }\item[{int}]{opt,  }\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{unsigned char}]{bkg\+Color,  }\item[{unsigned char}]{ltr\+Color,  }\item[{char}]{cursor\+Blink }\end{DoxyParamCaption})}
+
+
+
+editor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buffer\+Lenth} & Utilizado para comunicar la longitud total del buffer \\
+\hline
+\mbox{\texttt{ in}}  & {\em seen\+Buffer} & Utilizado para comunicar a la funcion la seccion visible del editor \\
+\hline
+\mbox{\texttt{ in}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Puntero al primer elemento de la cadena main\+Editor \\
+\hline
+\mbox{\texttt{ out}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Devuelve los datos ingresados por el usuario \\
+\hline
+\mbox{\texttt{ in}}  & {\em opt} & Utilizada para comunicar a la funcion las teclas presionadas por el usuario \\
+\hline
+\mbox{\texttt{ in}}  & {\em posX} & Utilizada para determinar la posicion en X del editor en la consola \\
+\hline
+\mbox{\texttt{ in}}  & {\em posY} & Utilizada para determinar la posicion en Y del editor en la consola \\
+\hline
+\mbox{\texttt{ in}}  & {\em bkg\+Color} & Utilizada para determinar el color de fondo del editor \\
+\hline
+\mbox{\texttt{ in}}  & {\em ltr\+Color} & Utililizado para dar el color de los caracacteres \\
+\hline
+\mbox{\texttt{ in}}  & {\em cursor\+Blink} & Utilizado para determinar cuando parpadea el cursor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} seen\+Buffer cantidad de caracteres máximos mostrados en un momento\Hypertarget{editor_8h_ae753773ec2c51ba7e8c7b10f4ac3c676}\label{editor_8h_ae753773ec2c51ba7e8c7b10f4ac3c676} 
+\index{editor.h@{editor.h}!parser@{parser}}
+\index{parser@{parser}!editor.h@{editor.h}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily void parser (\begin{DoxyParamCaption}\item[{unsigned short}]{buffer\+Lenth,  }\item[{char \texorpdfstring{$\ast$}{*}}]{e\+Vector }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buffer\+Lenth} & Utilizada para brindar la longitud total del buffer \\
+\hline
+\mbox{\texttt{ in}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Puntero de tipo char que recibe la direccion del primer elemento del vector main\+Editor \\
+\hline
+\mbox{\texttt{ out}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Devuelve los valores de la cadena en el formato correcto sin espacios. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

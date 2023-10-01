@@ -1,0 +1,363 @@
+\doxysection{main.\+c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$dos.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include \"{}CP865.\+h\"{}}\newline
+{\ttfamily \#include \"{}graphics.\+h\"{}}\newline
+{\ttfamily \#include \"{}ticker.\+h\"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__bit_field}{\+\_\+bit\+Field}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_ad1e508e805e4ddbc05119be4bb260985}{DEL}}~1083
+\item 
+\#define \mbox{\hyperlink{main_8c_a54af470c198f3dbe32eede2c32f3d746}{F1}}~1059
+\item 
+\#define \mbox{\hyperlink{main_8c_a5368759862ac5fb38772b91eace1205c}{F2}}~1060
+\item 
+\#define \mbox{\hyperlink{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d}{F3}}~1061
+\item 
+\#define \mbox{\hyperlink{main_8c_a437ef08681e7210d6678427030446a54}{LEFT}}~1075
+\item 
+\#define \mbox{\hyperlink{main_8c_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~1077
+\item 
+\#define \mbox{\hyperlink{main_8c_a629568514359445d2fbda71d70eeb1ce}{BACKSPACE}}~8
+\item 
+\#define \mbox{\hyperlink{main_8c_a4af1b6159e447ba72652bb7fcdfa726e}{ESC}}~27
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033}{\+\_\+states}} \{ \newline
+\mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033a06dc2c041ca25d7638a9a74e181800f2}{GAME\+\_\+\+START}} =0
+, \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033ad6997b48e270def1c0a1342240dd7139}{GAME\+\_\+\+IDLE}}
+, \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033aa9cb3328e37220e48c5df8d72c2740c7}{GAME\+\_\+\+SQ}}
+, \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033a831b3a16ff58fe31b6af6d3213eceb00}{GAME\+\_\+\+DATA}}
+, \newline
+\mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033aea0646feb07fb27b0db3736b529e0686}{GAME\+\_\+\+RES}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a64e904dc544987bf7a0afa4fdff5a864}{digital\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em digital\+Clock Funcion encargada de determinar generar un reloj digital, lleva a cabo esto enviando a las funciones de la librería graphics los numeros con sus colores correspondietes y las posiciones de cada uno en el display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a40f1b2f589cc58110e925a5f5dbb487a}{analog\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em analog\+Clock Función encargada de generar un reloj analogico, lo lleva a cabo generando una circunferencia y luego imprimiendo las agujas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_acfa0cdc5221dc0747defe5e983e19700}{memory\+Game}} ()
+\begin{DoxyCompactList}\small\item\em memory\+Game Función encargada de realizar un juego de la memoria \"{}\+Simón dice\"{}, el juego cuenta con 10 niveles en los cuales se debe de ingresar los números de la secuencia mostrasa dependiendo de la dificulatad EASY (numeros de los niveles constantes) HARD numeros de la secuencia se generan nuevamente con cada nivel. Presionando F3 se cambia de modo de juego, y presionando F2 se inicia o finaliza el juego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a6b0b7b3aa032913434c22210f3416900}{morse\+Code}} ()
+\begin{DoxyCompactList}\small\item\em memory\+Game Función encargada de imprimir un mensaje en morse ingresado en un editor, el mensaje se muestra en un led centrado el cuyo tiempo de encendido y apagado varia en función de si tenemos una rayo o un punto, el mensaje se comienza a imprimir con F2 y no para hasta que se vuelva a presionar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_af90967aa9adccaca2ac818acbd18eb4d}{led}} ()
+\begin{DoxyCompactList}\small\item\em led Funcion encargada de generar un led en la esquina superior izquierda el cual se prende y se apaga en intervalos diferentes dependiendo del modo de juego \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87}{display}} \mbox{[}40\mbox{]}\mbox{[}160\mbox{]}
+\item 
+unsigned int \mbox{\hyperlink{main_8c_a5243e87bbb7516d271859bc73b3258bc}{time\+Out}} = 100
+\item 
+struct tm \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8c_a1f3a9b0dfb4d7e2926c1dab0f13db233}{my\+Tm}}
+\item 
+short \mbox{\hyperlink{main_8c_a7736a56a96fa4366479732755a5b9d5e}{opt}}
+\item 
+char \mbox{\hyperlink{main_8c_a2287bd52a9f7ede36ca479197536e8ec}{editor}} \mbox{[}256\mbox{]}
+\item 
+time\+\_\+t \mbox{\hyperlink{main_8c_a94a7a8cfed43b417a220c087f112e451}{my\+Time}}
+\item 
+\mbox{\hyperlink{struct__bit_field}{\+\_\+bit\+Field}} \mbox{\hyperlink{main_8c_a8fd5309eb84262a8df3312a7f99309f8}{control}}
+\item 
+\mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033}{\+\_\+states}} \mbox{\hyperlink{main_8c_aa2df0311ad600a60b8de0f716213490c}{game\+States}}
+\item 
+clock\+\_\+t \mbox{\hyperlink{main_8c_a7d6890eecbfd9b00ce56ab5a5bf9cf16}{current\+Game\+Time}}
+\item 
+clock\+\_\+t \mbox{\hyperlink{main_8c_a8f62c45196c635b3ca429df1419dc222}{last\+Game\+Time}}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_aa05b5de90dc2e42631d0ce38894a8088}{morse}} \mbox{[}45\mbox{]}\mbox{[}6\mbox{]}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_aa6d847a7b126e122e6dc435409d9f7a3}{start}} \mbox{[}10\mbox{]} = \{91, 70, 50, 93, 58, 83, 84, 65, 82, 84\}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_a9f7504ebf7edbf6613897e17629c4163}{won}} \mbox{[}3\mbox{]} = \{87, 79, 78\}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_a2068f9a1fe73286c0ff32d95fb83d835}{lost}} \mbox{[}4\mbox{]} = \{76, 79, 83, 84\}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_abdb184e06067fb93b609136ed5f38412}{hard}} \mbox{[}4\mbox{]} = \{72, 65, 82, 68\}
+\item 
+const unsigned char \mbox{\hyperlink{main_8c_a6619e80c6b5fb5c75bda40f15bf743fb}{easy}} \mbox{[}4\mbox{]} = \{69, 65, 83, 89\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8c_a629568514359445d2fbda71d70eeb1ce}\label{main_8c_a629568514359445d2fbda71d70eeb1ce} 
+\index{main.c@{main.c}!BACKSPACE@{BACKSPACE}}
+\index{BACKSPACE@{BACKSPACE}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{BACKSPACE}{BACKSPACE}}
+{\footnotesize\ttfamily \#define BACKSPACE~8}
+
+\Hypertarget{main_8c_ad1e508e805e4ddbc05119be4bb260985}\label{main_8c_ad1e508e805e4ddbc05119be4bb260985} 
+\index{main.c@{main.c}!DEL@{DEL}}
+\index{DEL@{DEL}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{DEL}{DEL}}
+{\footnotesize\ttfamily \#define DEL~1083}
+
+\Hypertarget{main_8c_a4af1b6159e447ba72652bb7fcdfa726e}\label{main_8c_a4af1b6159e447ba72652bb7fcdfa726e} 
+\index{main.c@{main.c}!ESC@{ESC}}
+\index{ESC@{ESC}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ESC}{ESC}}
+{\footnotesize\ttfamily \#define ESC~27}
+
+\Hypertarget{main_8c_a54af470c198f3dbe32eede2c32f3d746}\label{main_8c_a54af470c198f3dbe32eede2c32f3d746} 
+\index{main.c@{main.c}!F1@{F1}}
+\index{F1@{F1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F1}{F1}}
+{\footnotesize\ttfamily \#define F1~1059}
+
+\Hypertarget{main_8c_a5368759862ac5fb38772b91eace1205c}\label{main_8c_a5368759862ac5fb38772b91eace1205c} 
+\index{main.c@{main.c}!F2@{F2}}
+\index{F2@{F2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F2}{F2}}
+{\footnotesize\ttfamily \#define F2~1060}
+
+\Hypertarget{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d}\label{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d} 
+\index{main.c@{main.c}!F3@{F3}}
+\index{F3@{F3}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F3}{F3}}
+{\footnotesize\ttfamily \#define F3~1061}
+
+\Hypertarget{main_8c_a437ef08681e7210d6678427030446a54}\label{main_8c_a437ef08681e7210d6678427030446a54} 
+\index{main.c@{main.c}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~1075}
+
+\Hypertarget{main_8c_a80fb826a684cf3f0d306b22aa100ddac}\label{main_8c_a80fb826a684cf3f0d306b22aa100ddac} 
+\index{main.c@{main.c}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~1077}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033}\label{main_8c_a663646f2d16be375255c4938b12d2033} 
+\index{main.c@{main.c}!\_states@{\_states}}
+\index{\_states@{\_states}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{\_states}{\_states}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033}{\+\_\+states}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_START@{GAME\_START}!main.c@{main.c}}\index{main.c@{main.c}!GAME\_START@{GAME\_START}}}\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033a06dc2c041ca25d7638a9a74e181800f2}\label{main_8c_a663646f2d16be375255c4938b12d2033a06dc2c041ca25d7638a9a74e181800f2} 
+GAME\+\_\+\+START&Estado utilizado para mostrar el cartel inicial -\/ start \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_IDLE@{GAME\_IDLE}!main.c@{main.c}}\index{main.c@{main.c}!GAME\_IDLE@{GAME\_IDLE}}}\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033ad6997b48e270def1c0a1342240dd7139}\label{main_8c_a663646f2d16be375255c4938b12d2033ad6997b48e270def1c0a1342240dd7139} 
+GAME\+\_\+\+IDLE&Estado utilizado para realizar la de espera de 2 segundos \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_SQ@{GAME\_SQ}!main.c@{main.c}}\index{main.c@{main.c}!GAME\_SQ@{GAME\_SQ}}}\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033aa9cb3328e37220e48c5df8d72c2740c7}\label{main_8c_a663646f2d16be375255c4938b12d2033aa9cb3328e37220e48c5df8d72c2740c7} 
+GAME\+\_\+\+SQ&Estado utilizado para mostrar la secuencia de números dependiendo del nivel en que te encuentres \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_DATA@{GAME\_DATA}!main.c@{main.c}}\index{main.c@{main.c}!GAME\_DATA@{GAME\_DATA}}}\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033a831b3a16ff58fe31b6af6d3213eceb00}\label{main_8c_a663646f2d16be375255c4938b12d2033a831b3a16ff58fe31b6af6d3213eceb00} 
+GAME\+\_\+\+DATA&Estado utilizado para ingreso datos \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_RES@{GAME\_RES}!main.c@{main.c}}\index{main.c@{main.c}!GAME\_RES@{GAME\_RES}}}\Hypertarget{main_8c_a663646f2d16be375255c4938b12d2033aea0646feb07fb27b0db3736b529e0686}\label{main_8c_a663646f2d16be375255c4938b12d2033aea0646feb07fb27b0db3736b529e0686} 
+GAME\+\_\+\+RES&Estado utilizado para mostrar el resultado WON o LOST \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a40f1b2f589cc58110e925a5f5dbb487a}\label{main_8c_a40f1b2f589cc58110e925a5f5dbb487a} 
+\index{main.c@{main.c}!analogClock@{analogClock}}
+\index{analogClock@{analogClock}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{analogClock()}{analogClock()}}
+{\footnotesize\ttfamily void analog\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+analog\+Clock Función encargada de generar un reloj analogico, lo lleva a cabo generando una circunferencia y luego imprimiendo las agujas. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a64e904dc544987bf7a0afa4fdff5a864}\label{main_8c_a64e904dc544987bf7a0afa4fdff5a864} 
+\index{main.c@{main.c}!digitalClock@{digitalClock}}
+\index{digitalClock@{digitalClock}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{digitalClock()}{digitalClock()}}
+{\footnotesize\ttfamily void digital\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+digital\+Clock Funcion encargada de determinar generar un reloj digital, lleva a cabo esto enviando a las funciones de la librería graphics los numeros con sus colores correspondietes y las posiciones de cada uno en el display. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{main_8c_af90967aa9adccaca2ac818acbd18eb4d}\label{main_8c_af90967aa9adccaca2ac818acbd18eb4d} 
+\index{main.c@{main.c}!led@{led}}
+\index{led@{led}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{led()}{led()}}
+{\footnotesize\ttfamily void led (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+led Funcion encargada de generar un led en la esquina superior izquierda el cual se prende y se apaga en intervalos diferentes dependiendo del modo de juego 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_acfa0cdc5221dc0747defe5e983e19700}\label{main_8c_acfa0cdc5221dc0747defe5e983e19700} 
+\index{main.c@{main.c}!memoryGame@{memoryGame}}
+\index{memoryGame@{memoryGame}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{memoryGame()}{memoryGame()}}
+{\footnotesize\ttfamily void memory\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+memory\+Game Función encargada de realizar un juego de la memoria \"{}\+Simón dice\"{}, el juego cuenta con 10 niveles en los cuales se debe de ingresar los números de la secuencia mostrasa dependiendo de la dificulatad EASY (numeros de los niveles constantes) HARD numeros de la secuencia se generan nuevamente con cada nivel. Presionando F3 se cambia de modo de juego, y presionando F2 se inicia o finaliza el juego. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a6b0b7b3aa032913434c22210f3416900}\label{main_8c_a6b0b7b3aa032913434c22210f3416900} 
+\index{main.c@{main.c}!morseCode@{morseCode}}
+\index{morseCode@{morseCode}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{morseCode()}{morseCode()}}
+{\footnotesize\ttfamily void morse\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+memory\+Game Función encargada de imprimir un mensaje en morse ingresado en un editor, el mensaje se muestra en un led centrado el cuyo tiempo de encendido y apagado varia en función de si tenemos una rayo o un punto, el mensaje se comienza a imprimir con F2 y no para hasta que se vuelva a presionar. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_a8fd5309eb84262a8df3312a7f99309f8}\label{main_8c_a8fd5309eb84262a8df3312a7f99309f8} 
+\index{main.c@{main.c}!control@{control}}
+\index{control@{control}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{control}{control}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct__bit_field}{\+\_\+bit\+Field}} control}
+
+Campo de bits utilizado como banderas \Hypertarget{main_8c_a7d6890eecbfd9b00ce56ab5a5bf9cf16}\label{main_8c_a7d6890eecbfd9b00ce56ab5a5bf9cf16} 
+\index{main.c@{main.c}!currentGameTime@{currentGameTime}}
+\index{currentGameTime@{currentGameTime}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{currentGameTime}{currentGameTime}}
+{\footnotesize\ttfamily clock\+\_\+t current\+Game\+Time}
+
+\Hypertarget{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87}\label{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87} 
+\index{main.c@{main.c}!display@{display}}
+\index{display@{display}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily unsigned char display\mbox{[}40\mbox{]}\mbox{[}160\mbox{]}}
+
+Matriz del display en la cual se guardan los caracteres mostrados \Hypertarget{main_8c_a6619e80c6b5fb5c75bda40f15bf743fb}\label{main_8c_a6619e80c6b5fb5c75bda40f15bf743fb} 
+\index{main.c@{main.c}!easy@{easy}}
+\index{easy@{easy}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{easy}{easy}}
+{\footnotesize\ttfamily const unsigned char easy\mbox{[}4\mbox{]} = \{69, 65, 83, 89\}}
+
+Cartel correspondiente al modo de juego facil, se muestra en la sección superior derecha del display \Hypertarget{main_8c_a2287bd52a9f7ede36ca479197536e8ec}\label{main_8c_a2287bd52a9f7ede36ca479197536e8ec} 
+\index{main.c@{main.c}!editor@{editor}}
+\index{editor@{editor}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{editor}{editor}}
+{\footnotesize\ttfamily char editor\mbox{[}256\mbox{]}}
+
+Vector utilizado como editor \Hypertarget{main_8c_aa2df0311ad600a60b8de0f716213490c}\label{main_8c_aa2df0311ad600a60b8de0f716213490c} 
+\index{main.c@{main.c}!gameStates@{gameStates}}
+\index{gameStates@{gameStates}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{gameStates}{gameStates}}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8c_a663646f2d16be375255c4938b12d2033}{\+\_\+states}} game\+States}
+
+Enumeracion de la maquina de estados del juego de la memoria \Hypertarget{main_8c_abdb184e06067fb93b609136ed5f38412}\label{main_8c_abdb184e06067fb93b609136ed5f38412} 
+\index{main.c@{main.c}!hard@{hard}}
+\index{hard@{hard}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{hard}{hard}}
+{\footnotesize\ttfamily const unsigned char hard\mbox{[}4\mbox{]} = \{72, 65, 82, 68\}}
+
+Cartel correspondiente al modo de juego dificil, se muestra en la sección superior derecha del display \Hypertarget{main_8c_a8f62c45196c635b3ca429df1419dc222}\label{main_8c_a8f62c45196c635b3ca429df1419dc222} 
+\index{main.c@{main.c}!lastGameTime@{lastGameTime}}
+\index{lastGameTime@{lastGameTime}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{lastGameTime}{lastGameTime}}
+{\footnotesize\ttfamily clock\+\_\+t last\+Game\+Time}
+
+\Hypertarget{main_8c_a2068f9a1fe73286c0ff32d95fb83d835}\label{main_8c_a2068f9a1fe73286c0ff32d95fb83d835} 
+\index{main.c@{main.c}!lost@{lost}}
+\index{lost@{lost}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{lost}{lost}}
+{\footnotesize\ttfamily const unsigned char lost\mbox{[}4\mbox{]} = \{76, 79, 83, 84\}}
+
+Cartel LOST mostrado al final del juego de la memoria \Hypertarget{main_8c_aa05b5de90dc2e42631d0ce38894a8088}\label{main_8c_aa05b5de90dc2e42631d0ce38894a8088} 
+\index{main.c@{main.c}!morse@{morse}}
+\index{morse@{morse}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{morse}{morse}}
+{\footnotesize\ttfamily const unsigned char morse\mbox{[}45\mbox{]}\mbox{[}6\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{\ \textcolor{stringliteral}{"{}RRRRR"{}},\ \textcolor{stringliteral}{"{}PRRRR"{}},\ \textcolor{stringliteral}{"{}PPRRR"{}},\ \textcolor{stringliteral}{"{}PPPRR"{}},\ \textcolor{stringliteral}{"{}PPPPR"{}},\ }
+\DoxyCodeLine{\textcolor{stringliteral}{"{}PPPPP"{}},\ \textcolor{stringliteral}{"{}RPPPP"{}},\ \textcolor{stringliteral}{"{}RRPPP"{}},\ \textcolor{stringliteral}{"{}RRRPP"{}},\ \textcolor{stringliteral}{"{}RRRRP"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}"{}},\textcolor{stringliteral}{"{}PR"{}},\ \textcolor{stringliteral}{"{}RPPP"{}},}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}RPRP"{}},\ \textcolor{stringliteral}{"{}RPP"{}},\ \textcolor{stringliteral}{"{}P"{}},\ \textcolor{stringliteral}{"{}PPRP"{}},\ \textcolor{stringliteral}{"{}RRP"{}},\textcolor{stringliteral}{"{}PPPP"{}},\ \textcolor{stringliteral}{"{}PP"{}},\ \textcolor{stringliteral}{"{}PRRR"{}},\ \textcolor{stringliteral}{"{}RPR"{}},\ \textcolor{stringliteral}{"{}PRPP"{}},\ \textcolor{stringliteral}{"{}RR"{}},\ \textcolor{stringliteral}{"{}RP"{}},}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}RRR"{}},\ \textcolor{stringliteral}{"{}PRRP"{}},\ \textcolor{stringliteral}{"{}RRPR"{}},\ \textcolor{stringliteral}{"{}PRP"{}},\textcolor{stringliteral}{"{}PPP"{}},\ \textcolor{stringliteral}{"{}R"{}},\ \textcolor{stringliteral}{"{}PPR"{}},\ \textcolor{stringliteral}{"{}PPPR"{}},\ \textcolor{stringliteral}{"{}PRR"{}},\ \textcolor{stringliteral}{"{}RPPR"{}},\ \textcolor{stringliteral}{"{}RPRR"{}},\ \textcolor{stringliteral}{"{}RRPP"{}}\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a94a7a8cfed43b417a220c087f112e451}\label{main_8c_a94a7a8cfed43b417a220c087f112e451} 
+\index{main.c@{main.c}!myTime@{myTime}}
+\index{myTime@{myTime}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{myTime}{myTime}}
+{\footnotesize\ttfamily time\+\_\+t my\+Time}
+
+\Hypertarget{main_8c_a1f3a9b0dfb4d7e2926c1dab0f13db233}\label{main_8c_a1f3a9b0dfb4d7e2926c1dab0f13db233} 
+\index{main.c@{main.c}!myTm@{myTm}}
+\index{myTm@{myTm}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{myTm}{myTm}}
+{\footnotesize\ttfamily struct tm\texorpdfstring{$\ast$}{*} my\+Tm}
+
+\Hypertarget{main_8c_a7736a56a96fa4366479732755a5b9d5e}\label{main_8c_a7736a56a96fa4366479732755a5b9d5e} 
+\index{main.c@{main.c}!opt@{opt}}
+\index{opt@{opt}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily short opt}
+
+Variable en la cual se guardan los valores ingresados por el usuario \Hypertarget{main_8c_aa6d847a7b126e122e6dc435409d9f7a3}\label{main_8c_aa6d847a7b126e122e6dc435409d9f7a3} 
+\index{main.c@{main.c}!start@{start}}
+\index{start@{start}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily const unsigned char start\mbox{[}10\mbox{]} = \{91, 70, 50, 93, 58, 83, 84, 65, 82, 84\}}
+
+Cartel \mbox{[}F2\mbox{]}\+:START mostrado en el estado de espera del juego de la memoria \Hypertarget{main_8c_a5243e87bbb7516d271859bc73b3258bc}\label{main_8c_a5243e87bbb7516d271859bc73b3258bc} 
+\index{main.c@{main.c}!timeOut@{timeOut}}
+\index{timeOut@{timeOut}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{timeOut}{timeOut}}
+{\footnotesize\ttfamily unsigned int time\+Out = 100}
+
+Variable utilizada como control de los temporizadores \Hypertarget{main_8c_a9f7504ebf7edbf6613897e17629c4163}\label{main_8c_a9f7504ebf7edbf6613897e17629c4163} 
+\index{main.c@{main.c}!won@{won}}
+\index{won@{won}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{won}{won}}
+{\footnotesize\ttfamily const unsigned char won\mbox{[}3\mbox{]} = \{87, 79, 78\}}
+
+Cartel WON mostrado al final del juego de la memoria 

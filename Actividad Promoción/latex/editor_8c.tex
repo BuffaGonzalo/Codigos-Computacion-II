@@ -1,0 +1,125 @@
+\doxysection{editor.\+c File Reference}
+\hypertarget{editor_8c}{}\label{editor_8c}\index{editor.c@{editor.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include \"{}editor.\+h\"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{editor_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}{ENTER}}~13
+\item 
+\#define \mbox{\hyperlink{editor_8c_a5ff6e798033f03e74730e99f01936f84}{SPACE}}~32
+\item 
+\#define \mbox{\hyperlink{editor_8c_ad1e508e805e4ddbc05119be4bb260985}{DEL}}~1083
+\item 
+\#define \mbox{\hyperlink{editor_8c_a437ef08681e7210d6678427030446a54}{LEFT}}~1075
+\item 
+\#define \mbox{\hyperlink{editor_8c_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~1077
+\item 
+\#define \mbox{\hyperlink{editor_8c_a629568514359445d2fbda71d70eeb1ce}{BACKSPACE}}~8
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{editor_8c_af3f139ab5d6bf4f8f74eb075a0197366}{editor}} (unsigned short buffer\+Lenth, unsigned short seen\+Buffer, char \texorpdfstring{$\ast$}{*}e\+Vector, int \mbox{\hyperlink{main_8c_a7736a56a96fa4366479732755a5b9d5e}{opt}}, int posX, int posY, unsigned char bkg\+Color, unsigned char ltr\+Color, char cursor\+Blink)
+\begin{DoxyCompactList}\small\item\em editor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{editor_8c_ae753773ec2c51ba7e8c7b10f4ac3c676}{parser}} (unsigned short buffer\+Lenth, char \texorpdfstring{$\ast$}{*}e\+Vector)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{editor_8c_a629568514359445d2fbda71d70eeb1ce}\label{editor_8c_a629568514359445d2fbda71d70eeb1ce} 
+\index{editor.c@{editor.c}!BACKSPACE@{BACKSPACE}}
+\index{BACKSPACE@{BACKSPACE}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{BACKSPACE}{BACKSPACE}}
+{\footnotesize\ttfamily \#define BACKSPACE~8}
+
+\Hypertarget{editor_8c_ad1e508e805e4ddbc05119be4bb260985}\label{editor_8c_ad1e508e805e4ddbc05119be4bb260985} 
+\index{editor.c@{editor.c}!DEL@{DEL}}
+\index{DEL@{DEL}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{DEL}{DEL}}
+{\footnotesize\ttfamily \#define DEL~1083}
+
+\Hypertarget{editor_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}\label{editor_8c_af4bced5cf8ed55746d4b5d34f9a0fe39} 
+\index{editor.c@{editor.c}!ENTER@{ENTER}}
+\index{ENTER@{ENTER}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{ENTER}{ENTER}}
+{\footnotesize\ttfamily \#define ENTER~13}
+
+\Hypertarget{editor_8c_a437ef08681e7210d6678427030446a54}\label{editor_8c_a437ef08681e7210d6678427030446a54} 
+\index{editor.c@{editor.c}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~1075}
+
+\Hypertarget{editor_8c_a80fb826a684cf3f0d306b22aa100ddac}\label{editor_8c_a80fb826a684cf3f0d306b22aa100ddac} 
+\index{editor.c@{editor.c}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~1077}
+
+\Hypertarget{editor_8c_a5ff6e798033f03e74730e99f01936f84}\label{editor_8c_a5ff6e798033f03e74730e99f01936f84} 
+\index{editor.c@{editor.c}!SPACE@{SPACE}}
+\index{SPACE@{SPACE}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{SPACE}{SPACE}}
+{\footnotesize\ttfamily \#define SPACE~32}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{editor_8c_af3f139ab5d6bf4f8f74eb075a0197366}\label{editor_8c_af3f139ab5d6bf4f8f74eb075a0197366} 
+\index{editor.c@{editor.c}!editor@{editor}}
+\index{editor@{editor}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{editor()}{editor()}}
+{\footnotesize\ttfamily void editor (\begin{DoxyParamCaption}\item[{unsigned short}]{buffer\+Lenth,  }\item[{unsigned short}]{seen\+Buffer,  }\item[{char \texorpdfstring{$\ast$}{*}}]{e\+Vector,  }\item[{int}]{opt,  }\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{unsigned char}]{bkg\+Color,  }\item[{unsigned char}]{ltr\+Color,  }\item[{char}]{cursor\+Blink }\end{DoxyParamCaption})}
+
+
+
+editor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buffer\+Lenth} & Utilizado para comunicar la longitud total del buffer \\
+\hline
+\mbox{\texttt{ in}}  & {\em seen\+Buffer} & Utilizado para comunicar a la funcion la seccion visible del editor \\
+\hline
+\mbox{\texttt{ in}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Puntero al primer elemento de la cadena main\+Editor \\
+\hline
+\mbox{\texttt{ out}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Devuelve los datos ingresados por el usuario \\
+\hline
+\mbox{\texttt{ in}}  & {\em opt} & Utilizada para comunicar a la funcion las teclas presionadas por el usuario \\
+\hline
+\mbox{\texttt{ in}}  & {\em posX} & Utilizada para determinar la posicion en X del editor en la consola \\
+\hline
+\mbox{\texttt{ in}}  & {\em posY} & Utilizada para determinar la posicion en Y del editor en la consola \\
+\hline
+\mbox{\texttt{ in}}  & {\em bkg\+Color} & Utilizada para determinar el color de fondo del editor \\
+\hline
+\mbox{\texttt{ in}}  & {\em ltr\+Color} & Utililizado para dar el color de los caracacteres \\
+\hline
+\mbox{\texttt{ in}}  & {\em cursor\+Blink} & Utilizado para determinar cuando parpadea el cursor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} seen\+Buffer cantidad de caracteres máximos mostrados en un momento\Hypertarget{editor_8c_ae753773ec2c51ba7e8c7b10f4ac3c676}\label{editor_8c_ae753773ec2c51ba7e8c7b10f4ac3c676} 
+\index{editor.c@{editor.c}!parser@{parser}}
+\index{parser@{parser}!editor.c@{editor.c}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily void parser (\begin{DoxyParamCaption}\item[{unsigned short}]{buffer\+Lenth,  }\item[{char \texorpdfstring{$\ast$}{*}}]{e\+Vector }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buffer\+Lenth} & Utilizada para brindar la longitud total del buffer \\
+\hline
+\mbox{\texttt{ in}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Puntero de tipo char que recibe la direccion del primer elemento del vector main\+Editor \\
+\hline
+\mbox{\texttt{ out}}  & {\em \texorpdfstring{$\ast$}{*}e\+Vector} & Devuelve los valores de la cadena en el formato correcto sin espacios. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

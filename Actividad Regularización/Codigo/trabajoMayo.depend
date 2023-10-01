@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1686156227 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<dos.h>
+	<math.h>
+	<string.h>
+	<ctype.h>
+	"CP865.h"
+	"graphics.h"
+	"ticker.h"
+
+1684962750 c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\cp865.h
+
+1686447326 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\graphics.c
+	"graphics.h"
+	"CP865.h"
+	<conio.h>
+
+1686364360 c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\graphics.h
+
+1685494788 c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\ticker.h
+	<time.h>
+
+1686314740 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\trabajomayo\ticker.c
+	"ticker.h"
+
+1686447328 source:e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\graphics.c
+	"graphics.h"
+	"CP865.h"
+	<conio.h>
+
+1686364362 e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\graphics.h
+
+1684962752 e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\cp865.h
+
+1686457036 source:e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<dos.h>
+	<math.h>
+	<string.h>
+	<ctype.h>
+	"CP865.h"
+	"graphics.h"
+	"ticker.h"
+
+1686457694 e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\ticker.h
+	<time.h>
+
+1686314742 source:e:\uner - ingmec\tercer módulo - ingmec\materias\computación ii\practica\actividad regularización\codigo\ticker.c
+	"ticker.h"
+

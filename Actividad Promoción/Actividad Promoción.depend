@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1688651449 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\graphics.c
+	<conio.h>
+	"graphics.h"
+
+1686608206 c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\graphics.h
+
+1690834257 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	<time.h>
+	<math.h>
+	<limits.h>
+	<stdbool.h>
+	"graphics.h"
+	"editor.h"
+	"ticker.h"
+
+1688409090 c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\editor.h
+
+1686521903 c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\ticker.h
+	<time.h>
+
+1686314740 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\ticker.c
+	"ticker.h"
+
+1689951385 source:c:\users\gonza\onedrive\documentos\bcc102cb\projects\actividad promoción\editor.c
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	<conio.h>
+	"editor.h"
+

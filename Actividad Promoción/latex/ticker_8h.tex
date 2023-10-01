@@ -1,0 +1,143 @@
+\doxysection{ticker.\+h File Reference}
+\hypertarget{ticker_8h}{}\label{ticker_8h}\index{ticker.h@{ticker.h}}
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}{On\+Timer}}) ()
+\begin{DoxyCompactList}\small\item\em Función on Timer. Define el tipo de función que se llama cuando se cumple el timer especificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\+\_\+e\+Type\+Timer}} \{ \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5eae4379d044711537d9ce3b3b58c575c58}{PERIODIC}} = 0
+, \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5ea2724fa87f252403cd2c93f7437f34fd5}{ONESHOT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Modos de ejecución del timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ticker_8h_afc6ae97512ec2864f9dd57a70c770342}{Timer\+Add}} ()
+\begin{DoxyCompactList}\small\item\em Timer\+Add Agrega un nuevo timer a la lista. Esta tiene que crearse primero con Timer\+Create. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ticker_8h_a46b6747f8761a39ab29b09b7dd3674dd}{Timer\+Connect}} (int a\+Time\+Id, \mbox{\hyperlink{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}{On\+Timer}} a\+On\+Timer\+Fun)
+\begin{DoxyCompactList}\small\item\em Timer\+Connect Conecta el timer a una función que se ejecutara cuando este se cumpla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ticker_8h_a4823bee628250d2c06971c8d0b10c327}{Timer\+Start}} (int a\+Timer\+Id, int ms, \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\+\_\+e\+Type\+Timer}} mode)
+\begin{DoxyCompactList}\small\item\em Timer\+Start Inicializa el timer para empezar a contar el tiempo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ticker_8h_a8215dbb23160013a508accc8862d8326}{Timer\+Stop}} (int a\+Timer\+Id)
+\begin{DoxyCompactList}\small\item\em Timer\+Stop Detiene la ejecución del timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ticker_8h_a30f2063c4c7e28a582609c6a6aafa4ff}{Ticker\+Task}} ()
+\begin{DoxyCompactList}\small\item\em Ticker\+Task Esta función debe llamarse continuamente en el programa principal en un lugar que no se bloqueado por niguna otra función, es la encargada de controlar el tiempo que pasa en cada uno de los timers configurados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}\label{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93} 
+\index{ticker.h@{ticker.h}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{OnTimer}{OnTimer}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} On\+Timer) ()}
+
+
+
+Función on Timer. Define el tipo de función que se llama cuando se cumple el timer especificado. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}\label{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e} 
+\index{ticker.h@{ticker.h}!\_eTypeTimer@{\_eTypeTimer}}
+\index{\_eTypeTimer@{\_eTypeTimer}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{\_eTypeTimer}{\_eTypeTimer}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\+\_\+e\+Type\+Timer}}}
+
+
+
+Modos de ejecución del timer. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PERIODIC@{PERIODIC}!ticker.h@{ticker.h}}\index{ticker.h@{ticker.h}!PERIODIC@{PERIODIC}}}\Hypertarget{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5eae4379d044711537d9ce3b3b58c575c58}\label{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5eae4379d044711537d9ce3b3b58c575c58} 
+PERIODIC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONESHOT@{ONESHOT}!ticker.h@{ticker.h}}\index{ticker.h@{ticker.h}!ONESHOT@{ONESHOT}}}\Hypertarget{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5ea2724fa87f252403cd2c93f7437f34fd5}\label{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5ea2724fa87f252403cd2c93f7437f34fd5} 
+ONESHOT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ticker_8h_a30f2063c4c7e28a582609c6a6aafa4ff}\label{ticker_8h_a30f2063c4c7e28a582609c6a6aafa4ff} 
+\index{ticker.h@{ticker.h}!TickerTask@{TickerTask}}
+\index{TickerTask@{TickerTask}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{TickerTask()}{TickerTask()}}
+{\footnotesize\ttfamily void Ticker\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ticker\+Task Esta función debe llamarse continuamente en el programa principal en un lugar que no se bloqueado por niguna otra función, es la encargada de controlar el tiempo que pasa en cada uno de los timers configurados. 
+
+Por ejemplo\+:
+
+while(1)\{ \doxylink{ticker_8h_a30f2063c4c7e28a582609c6a6aafa4ff}{Ticker\+Task()};\}\Hypertarget{ticker_8h_afc6ae97512ec2864f9dd57a70c770342}\label{ticker_8h_afc6ae97512ec2864f9dd57a70c770342} 
+\index{ticker.h@{ticker.h}!TimerAdd@{TimerAdd}}
+\index{TimerAdd@{TimerAdd}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{TimerAdd()}{TimerAdd()}}
+{\footnotesize\ttfamily int Timer\+Add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Timer\+Add Agrega un nuevo timer a la lista. Esta tiene que crearse primero con Timer\+Create. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve 0 en caso de no poder agregar un nuevo timer. Distinto de 0 cuando pudo agregarlo. 
+\end{DoxyReturn}
+\Hypertarget{ticker_8h_a46b6747f8761a39ab29b09b7dd3674dd}\label{ticker_8h_a46b6747f8761a39ab29b09b7dd3674dd} 
+\index{ticker.h@{ticker.h}!TimerConnect@{TimerConnect}}
+\index{TimerConnect@{TimerConnect}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{TimerConnect()}{TimerConnect()}}
+{\footnotesize\ttfamily void Timer\+Connect (\begin{DoxyParamCaption}\item[{int}]{a\+Time\+Id,  }\item[{\mbox{\hyperlink{ticker_8h_acb08e23c5f9e9c6c5a700e153e975c93}{On\+Timer}}}]{a\+On\+Timer\+Fun }\end{DoxyParamCaption})}
+
+
+
+Timer\+Connect Conecta el timer a una función que se ejecutara cuando este se cumpla. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a\+Timer\+Id} & número identificador del timer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em a\+On\+Timer\+Fun} & función a ejecutar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ticker_8h_a4823bee628250d2c06971c8d0b10c327}\label{ticker_8h_a4823bee628250d2c06971c8d0b10c327} 
+\index{ticker.h@{ticker.h}!TimerStart@{TimerStart}}
+\index{TimerStart@{TimerStart}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{TimerStart()}{TimerStart()}}
+{\footnotesize\ttfamily void Timer\+Start (\begin{DoxyParamCaption}\item[{int}]{a\+Timer\+Id,  }\item[{int}]{ms,  }\item[{\mbox{\hyperlink{ticker_8h_a4cbc69f99d89b7d29a81043ab2420c5e}{\+\_\+e\+Type\+Timer}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Timer\+Start Inicializa el timer para empezar a contar el tiempo. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a\+Timer\+Id} & número identificador del timer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ms} & tiempo en milisegundos. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mode} & forma en que se ejecutara el timer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{ticker_8h_a8215dbb23160013a508accc8862d8326}\label{ticker_8h_a8215dbb23160013a508accc8862d8326} 
+\index{ticker.h@{ticker.h}!TimerStop@{TimerStop}}
+\index{TimerStop@{TimerStop}!ticker.h@{ticker.h}}
+\doxysubsubsection{\texorpdfstring{TimerStop()}{TimerStop()}}
+{\footnotesize\ttfamily void Timer\+Stop (\begin{DoxyParamCaption}\item[{int}]{a\+Timer\+Id }\end{DoxyParamCaption})}
+
+
+
+Timer\+Stop Detiene la ejecución del timer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a\+Timer\+Id} & número identificador del timer. \\
+\hline
+\end{DoxyParams}

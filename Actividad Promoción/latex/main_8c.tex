@@ -1,0 +1,209 @@
+\doxysection{main.\+c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \"{}graphics.\+h\"{}}\newline
+{\ttfamily \#include \"{}editor.\+h\"{}}\newline
+{\ttfamily \#include \"{}ticker.\+h\"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs_bit_field}{s\+Bit\+Field}}
+\item 
+struct \mbox{\hyperlink{structs_node}{s\+Node}}
+\item 
+struct \mbox{\hyperlink{structs_position}{s\+Position}}
+\item 
+struct \mbox{\hyperlink{structs_command}{s\+Command}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_ad1e508e805e4ddbc05119be4bb260985}{DEL}}~1083
+\item 
+\#define \mbox{\hyperlink{main_8c_a54af470c198f3dbe32eede2c32f3d746}{F1}}~1059
+\item 
+\#define \mbox{\hyperlink{main_8c_a5368759862ac5fb38772b91eace1205c}{F2}}~1060
+\item 
+\#define \mbox{\hyperlink{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d}{F3}}~1061
+\item 
+\#define \mbox{\hyperlink{main_8c_a437ef08681e7210d6678427030446a54}{LEFT}}~1075
+\item 
+\#define \mbox{\hyperlink{main_8c_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~1077
+\item 
+\#define \mbox{\hyperlink{main_8c_a629568514359445d2fbda71d70eeb1ce}{BACKSPACE}}~8
+\item 
+\#define \mbox{\hyperlink{main_8c_a4af1b6159e447ba72652bb7fcdfa726e}{ESC}}~27
+\item 
+\#define \mbox{\hyperlink{main_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}{ENTER}}~13
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a282224d7bf14133e0ccc600b1d0f78d9}{car}} (int x, int y)
+\item 
+void \mbox{\hyperlink{main_8c_a60a6e4dbc393fa2ad62d8eeb1d6595b8}{start\+Point}} (int x, int y)
+\item 
+void \mbox{\hyperlink{main_8c_a9deeb1f7d432117db52272bde834e59a}{load\+Mapa}} (char data\mbox{[}100\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8c_a2644368908151025b1bcafad971e42fc}{maze}} (int rows, int columns)
+\item 
+void \mbox{\hyperlink{main_8c_ae2950b1d8e3356cd429a1361ca2b4421}{pop}} (struct \mbox{\hyperlink{structs_node}{s\+Node}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}L, \mbox{\hyperlink{structs_position}{s\+Position}} \texorpdfstring{$\ast$}{*}positions, int columns, int \texorpdfstring{$\ast$}{*}x, int \texorpdfstring{$\ast$}{*}y)
+\item 
+void \mbox{\hyperlink{main_8c_ac2a53c604740a981c71a684c993009ed}{end\+Point}} (int x, int y)
+\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{main_8c_a7736a56a96fa4366479732755a5b9d5e}{opt}}
+\item 
+unsigned char \mbox{\hyperlink{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87}{display}} \mbox{[}40\mbox{]}\mbox{[}160\mbox{]}
+\item 
+\mbox{\hyperlink{structs_bit_field}{s\+Bit\+Field}} \mbox{\hyperlink{main_8c_affb2e50fe9735b2d55d4bad69e59e302}{bit\+Field}}
+\item 
+const \mbox{\hyperlink{structs_command}{s\+Command}} \mbox{\hyperlink{main_8c_a5af0be8b6fb069c7430f2674bf4875bc}{commands}} \mbox{[}21\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{main_8c_a629568514359445d2fbda71d70eeb1ce}\label{main_8c_a629568514359445d2fbda71d70eeb1ce} 
+\index{main.c@{main.c}!BACKSPACE@{BACKSPACE}}
+\index{BACKSPACE@{BACKSPACE}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{BACKSPACE}{BACKSPACE}}
+{\footnotesize\ttfamily \#define BACKSPACE~8}
+
+\Hypertarget{main_8c_ad1e508e805e4ddbc05119be4bb260985}\label{main_8c_ad1e508e805e4ddbc05119be4bb260985} 
+\index{main.c@{main.c}!DEL@{DEL}}
+\index{DEL@{DEL}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{DEL}{DEL}}
+{\footnotesize\ttfamily \#define DEL~1083}
+
+\Hypertarget{main_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}\label{main_8c_af4bced5cf8ed55746d4b5d34f9a0fe39} 
+\index{main.c@{main.c}!ENTER@{ENTER}}
+\index{ENTER@{ENTER}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ENTER}{ENTER}}
+{\footnotesize\ttfamily \#define ENTER~13}
+
+\Hypertarget{main_8c_a4af1b6159e447ba72652bb7fcdfa726e}\label{main_8c_a4af1b6159e447ba72652bb7fcdfa726e} 
+\index{main.c@{main.c}!ESC@{ESC}}
+\index{ESC@{ESC}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ESC}{ESC}}
+{\footnotesize\ttfamily \#define ESC~27}
+
+\Hypertarget{main_8c_a54af470c198f3dbe32eede2c32f3d746}\label{main_8c_a54af470c198f3dbe32eede2c32f3d746} 
+\index{main.c@{main.c}!F1@{F1}}
+\index{F1@{F1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F1}{F1}}
+{\footnotesize\ttfamily \#define F1~1059}
+
+\Hypertarget{main_8c_a5368759862ac5fb38772b91eace1205c}\label{main_8c_a5368759862ac5fb38772b91eace1205c} 
+\index{main.c@{main.c}!F2@{F2}}
+\index{F2@{F2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F2}{F2}}
+{\footnotesize\ttfamily \#define F2~1060}
+
+\Hypertarget{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d}\label{main_8c_a79fc770a19406e6876ff9ffd6ce66f3d} 
+\index{main.c@{main.c}!F3@{F3}}
+\index{F3@{F3}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F3}{F3}}
+{\footnotesize\ttfamily \#define F3~1061}
+
+\Hypertarget{main_8c_a437ef08681e7210d6678427030446a54}\label{main_8c_a437ef08681e7210d6678427030446a54} 
+\index{main.c@{main.c}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~1075}
+
+\Hypertarget{main_8c_a80fb826a684cf3f0d306b22aa100ddac}\label{main_8c_a80fb826a684cf3f0d306b22aa100ddac} 
+\index{main.c@{main.c}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~1077}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_a282224d7bf14133e0ccc600b1d0f78d9}\label{main_8c_a282224d7bf14133e0ccc600b1d0f78d9} 
+\index{main.c@{main.c}!car@{car}}
+\index{car@{car}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{car()}{car()}}
+{\footnotesize\ttfamily void car (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_ac2a53c604740a981c71a684c993009ed}\label{main_8c_ac2a53c604740a981c71a684c993009ed} 
+\index{main.c@{main.c}!endPoint@{endPoint}}
+\index{endPoint@{endPoint}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{endPoint()}{endPoint()}}
+{\footnotesize\ttfamily void end\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a9deeb1f7d432117db52272bde834e59a}\label{main_8c_a9deeb1f7d432117db52272bde834e59a} 
+\index{main.c@{main.c}!loadMapa@{loadMapa}}
+\index{loadMapa@{loadMapa}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{loadMapa()}{loadMapa()}}
+{\footnotesize\ttfamily void load\+Mapa (\begin{DoxyParamCaption}\item[{char}]{data\mbox{[}100\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8c_a2644368908151025b1bcafad971e42fc}\label{main_8c_a2644368908151025b1bcafad971e42fc} 
+\index{main.c@{main.c}!maze@{maze}}
+\index{maze@{maze}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{maze()}{maze()}}
+{\footnotesize\ttfamily void maze (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{columns }\end{DoxyParamCaption})}
+
+maze\+: funcion tipo void la cual genera el laberinto aleatorio \Hypertarget{main_8c_ae2950b1d8e3356cd429a1361ca2b4421}\label{main_8c_ae2950b1d8e3356cd429a1361ca2b4421} 
+\index{main.c@{main.c}!pop@{pop}}
+\index{pop@{pop}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void pop (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structs_node}{s\+Node}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{L,  }\item[{\mbox{\hyperlink{structs_position}{s\+Position}} \texorpdfstring{$\ast$}{*}}]{positions,  }\item[{int}]{columns,  }\item[{int \texorpdfstring{$\ast$}{*}}]{x,  }\item[{int \texorpdfstring{$\ast$}{*}}]{y }\end{DoxyParamCaption})}
+
+pop\+: funcion utilizada para eliminar el ultimo elemento de la lista donde se almacenan las posiciones visitadas \Hypertarget{main_8c_a60a6e4dbc393fa2ad62d8eeb1d6595b8}\label{main_8c_a60a6e4dbc393fa2ad62d8eeb1d6595b8} 
+\index{main.c@{main.c}!startPoint@{startPoint}}
+\index{startPoint@{startPoint}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{startPoint()}{startPoint()}}
+{\footnotesize\ttfamily void start\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_affb2e50fe9735b2d55d4bad69e59e302}\label{main_8c_affb2e50fe9735b2d55d4bad69e59e302} 
+\index{main.c@{main.c}!bitField@{bitField}}
+\index{bitField@{bitField}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{bitField}{bitField}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_bit_field}{s\+Bit\+Field}} bit\+Field}
+
+Campo de bits utilizado como banderas \Hypertarget{main_8c_a5af0be8b6fb069c7430f2674bf4875bc}\label{main_8c_a5af0be8b6fb069c7430f2674bf4875bc} 
+\index{main.c@{main.c}!commands@{commands}}
+\index{commands@{commands}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{commands}{commands}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structs_command}{s\+Command}} commands\mbox{[}21\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{\{1,\textcolor{stringliteral}{"{}setinicio"{}},2\},\{2,\textcolor{stringliteral}{"{}setfinal"{}},2\},\{3,\textcolor{stringliteral}{"{}resetmapa"{}},0\},\{4,\textcolor{stringliteral}{"{}loadmapa"{}},1\},\{5,\textcolor{stringliteral}{"{}savemapa"{}},1\},\{6,\textcolor{stringliteral}{"{}genmapa"{}},2\},\{7,\textcolor{stringliteral}{"{}resolver"{}},0\},\{8,\textcolor{stringliteral}{"{}gomapa"{}},0\},\ \{9,\textcolor{stringliteral}{"{}steptime"{}},1\},}
+\DoxyCodeLine{\ \ \ \ \{10,\textcolor{stringliteral}{"{}clrscr"{}},0\},\{11,\textcolor{stringliteral}{"{}adelante"{}},1\},\{12,\textcolor{stringliteral}{"{}atras"{}},1\},\{13,\textcolor{stringliteral}{"{}girarizquierda"{}},1\},\{14,\textcolor{stringliteral}{"{}girarderecha"{}},1\},\{15,\textcolor{stringliteral}{"{}repetir"{}},1\},\{16,\textcolor{stringliteral}{"{}brushon"{}},1\},\{17,\textcolor{stringliteral}{"{}brushoff"{}},0\},\{18,\textcolor{stringliteral}{"{}loadsecuencia"{}},1\},}
+\DoxyCodeLine{\ \ \ \ \{19,\textcolor{stringliteral}{"{}gosecuencia"{}},1\},\{20,\textcolor{stringliteral}{"{}resetsecuencia"{}},0\},\{21,\textcolor{stringliteral}{"{}stop"{}},0\},\}}
+
+\end{DoxyCode}
+\Hypertarget{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87}\label{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87} 
+\index{main.c@{main.c}!display@{display}}
+\index{display@{display}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily unsigned char display\mbox{[}40\mbox{]}\mbox{[}160\mbox{]}}
+
+Matriz del display en la cual se guardan los caracteres mostrados \Hypertarget{main_8c_a7736a56a96fa4366479732755a5b9d5e}\label{main_8c_a7736a56a96fa4366479732755a5b9d5e} 
+\index{main.c@{main.c}!opt@{opt}}
+\index{opt@{opt}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily short opt}
+
+Variable donde se almacenan los valoren ingresados 

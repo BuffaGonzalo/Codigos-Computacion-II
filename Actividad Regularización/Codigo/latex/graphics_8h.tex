@@ -1,0 +1,124 @@
+\doxysection{graphics.\+h File Reference}
+\hypertarget{graphics_8h}{}\label{graphics_8h}\index{graphics.h@{graphics.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{graphics_8h_aa0ee47297a843559f7a5bb184d9ed2c1}{create\+Display}} (unsigned char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_a39f5daca1cd0448fbcd082a3cdc94b87}{display}}, int columns, int rows)
+\begin{DoxyCompactList}\small\item\em crear\+Display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphics_8h_a657c204c6140086a4bb03ae33c1dfff9}{load\+Letters}} (unsigned char font\+Value, char background\+Color, char font\+Color, int posX, int posY)
+\begin{DoxyCompactList}\small\item\em load\+Letters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphics_8h_a324c593c3f912b4e4e7c7df5de395ec2}{display\+Section}} (int posX, int posY, int pos\+Xmax, int pos\+Ymax)
+\begin{DoxyCompactList}\small\item\em display\+Section \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphics_8h_aeb6e8728060e12968987e4de0eb7f5a5}{clear\+Display}} (int min\+Row, int min\+Col, int max\+Row, int max\+Col, char show)
+\begin{DoxyCompactList}\small\item\em clear\+Display \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8h_aeb6e8728060e12968987e4de0eb7f5a5}\label{graphics_8h_aeb6e8728060e12968987e4de0eb7f5a5} 
+\index{graphics.h@{graphics.h}!clearDisplay@{clearDisplay}}
+\index{clearDisplay@{clearDisplay}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{clearDisplay()}{clearDisplay()}}
+{\footnotesize\ttfamily void clear\+Display (\begin{DoxyParamCaption}\item[{int}]{min\+Row,  }\item[{int}]{min\+Col,  }\item[{int}]{max\+Row,  }\item[{int}]{max\+Col,  }\item[{char}]{show }\end{DoxyParamCaption})}
+
+
+
+clear\+Display 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row\+Min} & tamaño inicial de filas \\
+\hline
+\mbox{\texttt{ in}}  & {\em col\+Min} & tamaño inicial de columnas \\
+\hline
+\mbox{\texttt{ in}}  & {\em row\+Max} & tamaño máximo de filas \\
+\hline
+\mbox{\texttt{ in}}  & {\em col\+Max} & tamaño máximo de columnas \\
+\hline
+\mbox{\texttt{ in}}  & {\em show} & imprimir la pantalla limpia (1=imprimir)\\
+\hline
+\end{DoxyParams}
+Función encargada de limpiar la totalidad o una sección del display
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{graphics_8h_aa0ee47297a843559f7a5bb184d9ed2c1}\label{graphics_8h_aa0ee47297a843559f7a5bb184d9ed2c1} 
+\index{graphics.h@{graphics.h}!createDisplay@{createDisplay}}
+\index{createDisplay@{createDisplay}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{createDisplay()}{createDisplay()}}
+{\footnotesize\ttfamily void create\+Display (\begin{DoxyParamCaption}\item[{unsigned char \texorpdfstring{$\ast$}{*}}]{display,  }\item[{int}]{columns,  }\item[{int}]{rows }\end{DoxyParamCaption})}
+
+
+
+crear\+Display 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em display} & dirección del array ingresado \\
+\hline
+\mbox{\texttt{ out}}  & {\em display} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em columns} & cantidad de columnas máxima del array \\
+\hline
+\mbox{\texttt{ in}}  & {\em rows} & cantidad de filas máxima del array\\
+\hline
+\end{DoxyParams}
+Funcion encargada de recibir el display del main, y adignarlo a un puntero, con el cual luego nos desplazaremos en la librería con el fin de realizar modificaciones
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{graphics_8h_a324c593c3f912b4e4e7c7df5de395ec2}\label{graphics_8h_a324c593c3f912b4e4e7c7df5de395ec2} 
+\index{graphics.h@{graphics.h}!displaySection@{displaySection}}
+\index{displaySection@{displaySection}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{displaySection()}{displaySection()}}
+{\footnotesize\ttfamily void display\+Section (\begin{DoxyParamCaption}\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{int}]{pos\+Xmax,  }\item[{int}]{pos\+Ymax }\end{DoxyParamCaption})}
+
+
+
+display\+Section 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em posX} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em posY} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos\+XMax} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos\+YMax} & \\
+\hline
+\end{DoxyParams}
+Funcion encargada de mostrar un sector del display en el cual tendriamos letras.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{graphics_8h_a657c204c6140086a4bb03ae33c1dfff9}\label{graphics_8h_a657c204c6140086a4bb03ae33c1dfff9} 
+\index{graphics.h@{graphics.h}!loadLetters@{loadLetters}}
+\index{loadLetters@{loadLetters}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{loadLetters()}{loadLetters()}}
+{\footnotesize\ttfamily void load\+Letters (\begin{DoxyParamCaption}\item[{unsigned char}]{font\+Value,  }\item[{char}]{background\+Color,  }\item[{char}]{font\+Color,  }\item[{int}]{posX,  }\item[{int}]{posY }\end{DoxyParamCaption})}
+
+
+
+load\+Letters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em font\+Value} & posición en la ROM del carácter \\
+\hline
+\mbox{\texttt{ in}}  & {\em background\+Color} & valor del color de fondo \\
+\hline
+\mbox{\texttt{ in}}  & {\em font\+Color} & valor del color del carácter \\
+\hline
+\mbox{\texttt{ in}}  & {\em posX} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em posY} & \\
+\hline
+\end{DoxyParams}
+Función encargada de cargar numeros en el display tomando un valor (font\+Value) el cual luego de dependiendo del valor del archivo FONT, cargamos en las posiciones del display caracteres 254 o espacios.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
